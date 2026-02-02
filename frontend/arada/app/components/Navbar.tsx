@@ -1,8 +1,10 @@
 'use client';
 import React from 'react'
+import Image from "next/image";
 import {Search,Heart,ShoppingBag,Menu,X} from 'lucide-react'
 import {MAIN_NAV_ITEMS} from '../constants'
 import { useState } from 'react'
+import aradaLogo from '@/public/image/Tertiary-logo.png'
 function Navbar() {
   const [isMenuOpen,setIsMenuOpen] = useState(false)
 
@@ -25,16 +27,12 @@ function Navbar() {
       <nav className="flex items-center justify-between px-6 md:px-12 py-3 rounded-2xl bg-[#e0d9d9f4] mx-6 my-4">
         {/* Logo Placeholder - Swoosh shape via SVG */}
         <div className="shrink-0 cursor-pointer">
-          <svg
-            height="24"
-            width="78"
-            viewBox="0 0 69 24"
-            role="img"
-            aria-label="Arada echommerce"
-            className="fill-current"
-          >
-            <path d="M0 0l49 20 20-16.5L23 24z"></path>
-          </svg>
+          <Image 
+           src={aradaLogo}
+           alt='arada brand logo image'
+           width={78}
+           
+          />
         </div>
 
         {/* Desktop Links */}

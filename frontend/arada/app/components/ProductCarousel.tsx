@@ -23,7 +23,7 @@ const ProductCarousel = () => {
   };
 
   return (
-    <section className="px-6 md:px-12 py-16">
+    <section className="px-6 md:px-12 py-16 no-scrollbar">
       <div className="flex justify-between items-end mb-8">
         <h2 className="text-2xl font-semibold">Latest & Greatest</h2>
         <div className="flex gap-3">

@@ -2,10 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import heroImage from '@/public/image/banner.jpg'
 import secondImage from '@/public/image/black-shoes-10.jpg'
+
 function Hero() {
   return (
     <section className="relative  w-full">
-      <div className="w-full relative overflow-hidden h-[60vh] md:h-[80vh] rounded-xl group">
+      <div className="w-screen relative overflow-hidden h-[60vh] md:h-[100vh] rounded-xl group">
         <Image
          src={heroImage}
          alt='hero'
@@ -20,9 +21,8 @@ function Hero() {
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>
-
-      <div className="mt-12 flex flex-col items-center text-center">
-        <p className="font-medium text-[16px] mb-2 uppercase tracking-tight">Nike Air Max Dn</p>
+      <div className="mt-12 flex flex-col items-center text-center absolute z-20 inset-1/5 text-white">
+        <p className="font-medium text-[16px] mb-2 uppercase tracking-tight">Arada Brand Max Dn</p>
         <h1 className="text-4xl md:text-7xl font-extrabold tracking-tighter uppercase mb-6 leading-none">
           Feel The Unreal
         </h1>
@@ -39,4 +39,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default Hero;
