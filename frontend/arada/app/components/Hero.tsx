@@ -1,13 +1,22 @@
 import React from 'react'
-
+import Image from 'next/image'
+import heroImage from '@/public/image/banner.jpg'
+import secondImage from '@/public/image/black-shoes-10.jpg'
 function Hero() {
   return (
-    <section className="relative px-6 w-full">
+    <section className="relative  w-full">
       <div className="w-full relative overflow-hidden h-[60vh] md:h-[80vh] rounded-xl group">
-        <img
-          src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&q=80&w=2000"
-          alt="Hero"
+        <Image
+         src={heroImage}
+         alt='hero'
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+         >
+
+        </Image>
+        <Image 
+          src={secondImage}
+          alt='hel'
+
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>
