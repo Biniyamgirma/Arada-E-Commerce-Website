@@ -6,18 +6,16 @@ import secondImage from '@/public/image/black-shoes-10.jpg'
 function Hero() {
   return (
     <section className="relative  w-full">
-      <div className="w-screen relative overflow-hidden h-[60vh] md:h-[100vh] rounded-xl group">
+      <div className="w-screen relative overflow-hidden h-[60vh] md:h-[100vh]  group">
         <Image
          src={heroImage}
          alt='hero'
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
          >
-
         </Image>
         <Image 
           src={secondImage}
-          alt='hel'
-
+          alt='logo'
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>

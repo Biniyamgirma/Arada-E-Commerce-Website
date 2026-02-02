@@ -5,6 +5,8 @@ import {Search,Heart,ShoppingBag,Menu,X} from 'lucide-react'
 import {MAIN_NAV_ITEMS} from '../constants'
 import { useState } from 'react'
 import aradaLogo from '@/public/image/Tertiary-logo.png'
+import blackShoes1 from '@/public/image/black-shoes.jpg'
+import blackShoes2 from '@/public/image/black-shoes-2.jpg'
 function Navbar() {
   const [isMenuOpen,setIsMenuOpen] = useState(false)
 
@@ -24,8 +26,9 @@ function Navbar() {
       </div>
 
       {/* Main Navigation */}
-      <nav className="flex items-center justify-between px-6 md:px-12 py-3 rounded-2xl bg-[#e0d9d9f4] mx-6 my-4">
-        {/* Logo Placeholder - Swoosh shape via SVG */}
+      <nav className="bg-[#e0d9d9f4]">
+        <div className='flex items-center justify-between  px-6 md:px-12 py-3   '>
+          {/* Logo Placeholder - Swoosh shape via SVG */}
         <div className="shrink-0 cursor-pointer">
           <Image 
            src={aradaLogo}
@@ -73,6 +76,60 @@ function Navbar() {
           >
             <Menu className="w-6 h-6" />
           </button>
+        </div>
+        </div>
+        <div className='flex  h-[50vh] '>
+          {/* hidden */}
+          <div className=" link-holder md:flex justify-between items-center w-8/12 mx-16">
+            <div>
+            <h4 className="font-bold mb-6">Icons</h4>
+            <ul className="space-y-4 text-gray-500 text-[16px]">
+              <li><a href="#" className="hover:text-black">Air Force 1</a></li>
+              <li><a href="#" className="hover:text-black">Huarache</a></li>
+              <li><a href="#" className="hover:text-black">Air Max 90</a></li>
+              <li><a href="#" className="hover:text-black">Air Max 97</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold mb-6">Shoes</h4>
+            <ul className="space-y-4 text-gray-500 text-[16px]">
+              <li><a href="#" className="hover:text-black">All Shoes</a></li>
+              <li><a href="#" className="hover:text-black">Custom Shoes</a></li>
+              <li><a href="#" className="hover:text-black">Jordan Shoes</a></li>
+              <li><a href="#" className="hover:text-black">Running Shoes</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold mb-6">Clothing</h4>
+            <ul className="space-y-4 text-gray-500 text-[16px]">
+              <li><a href="#" className="hover:text-black">All Clothing</a></li>
+              <li><a href="#" className="hover:text-black">Modest Wear</a></li>
+              <li><a href="#" className="hover:text-black">Hoodies & Pullovers</a></li>
+              <li><a href="#" className="hover:text-black">Shirts & Tops</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold mb-6">Kids</h4>
+            <ul className="space-y-4 text-gray-500 text-[16px]">
+              <li><a href="#" className="hover:text-black">Infant & Toddler Shoes</a></li>
+              <li><a href="#" className="hover:text-black">Kids Shoes</a></li>
+              <li><a href="#" className="hover:text-black">Kids Jordan Shoes</a></li>
+              <li><a href="#" className="hover:text-black">Kids Basketball Shoes</a></li>
+            </ul>
+          </div>
+          </div>
+          <div className="image-holder flex h-[90%] justify-center w-[40%] gap-2 mb-4">
+            <Image 
+              src={blackShoes1}
+              alt='second shoes'
+              className='rounded-2xl w-[45%] object-cover'
+            />
+            <Image 
+              src={blackShoes2}
+              alt='second shoes'
+              className='rounded-2xl w-[45%] object-cover'
+            />
+          </div>
         </div>
       </nav>
 
